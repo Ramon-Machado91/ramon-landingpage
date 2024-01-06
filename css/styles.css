@@ -651,9 +651,12 @@ i {
   }
 
   /* Depoimentos */
+
+  
   .text-container {
     text-align: center;
     padding: 2rem;
+    
   }
 
   /* Colaboradores */
@@ -715,5 +718,25 @@ i {
   .contact-info,
   .links-container {
     width: 100%;
+  }
+}
+
+
+h3, h1,div, nav{
+  animation: appear 1ms ease-in;
+  animation-timeline: view();
+  animation-range: cover 0% cover 15%;
+}
+
+@keyframes appear {
+  from{
+    opacity: 0;
+    translate: -100vw 0;
+  }
+
+
+  to{
+    opacity: 1;
+    translate: 0 0;
   }
 }
